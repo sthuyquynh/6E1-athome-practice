@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI TẬP TIẾNG ANH LỚP 6: FULL EXERCISES</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --bg: #f4f7f6;
+            --white: #ffffff;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background: var(--bg); color: #333; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: var(--white); padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: var(--primary); text-transform: uppercase; border-bottom: 3px solid var(--secondary); padding-bottom: 10px; }
+        h2 { color: var(--secondary); margin-top: 30px; border-left: 5px solid var(--secondary); padding-left: 15px; background: #f0f7ff; padding-top: 5px; padding-bottom: 5px; }
+        .exercise { margin-bottom: 40px; padding: 15px; border: 1px solid #eee; border-radius: 10px; }
+        
+        /* Bài 1: Matching */
+        .matching-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+        .match-item { display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #eee; background: #fff; }
+        select { padding: 8px; border-radius: 5px; border: 1px solid #ccc; width: 140px; font-size: 14px; }
+
+        /* Bài 2: MCQ */
+        .q-block { margin-bottom: 25px; padding: 15px; background: #fafafa; border-radius: 8px; border: 1px solid #f0f0f0; }
+        .options-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-top: 10px; }
+        .options-grid label { background: #fff; border: 1px solid #ddd; padding: 10px; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .options-grid input { margin-right: 8px; }
+
+        /* Bài 3, 4, 5: Inputs */
+        input[type="text"] { border: none; border-bottom: 2px solid #ccc; padding: 5px; font-size: 16px; width: 85%; transition: 0.3s; background: transparent; }
+        input[type="text"]:focus { outline: none; border-color: var(--secondary); }
+        .passage-input { width: 110px !important; text-align: center; font-weight: bold; color: var(--primary); }
+
+        /* Results */
+        #submit-btn { display: block; width: 280px; margin: 40px auto; padding: 18px; background: var(--success); color: white; border: none; border-radius: 35px; font-size: 20px; font-weight: bold; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3); }
+        #submit-btn:hover { background: #219150; transform: translateY(-3px); }
+        #result-summary { display: none; margin-top: 30px; padding: 25px; border-radius: 12px; background: #eef7ff; border: 2px solid var(--secondary); }
+        .explanation { display: none; margin-top: 10px; font-size: 0.9em; color: #555; background: #fff; padding: 12px; border-radius: 8px; border-left: 4px solid var(--secondary); box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Phiếu Bài Tập Tiếng Anh Lớp 6: Past Simple & Sports</h1>
+
+    <div class="exercise">
+        <h2>Bài 1. Nối động từ Hiện tại (V1) với Quá khứ (V2)</h2>
+        <div class="matching-grid">
+            <div class="match-item">1. read <select id="m1" data-ans="read"><option value="">Chọn V2...</option><option value="read">read</option><option value="rode">rode</option><option value="red">red</option></select></div>
+            <div class="match-item">2. begin <select id="m2" data-ans="began"><option value="">Chọn V2...</option><option value="began">began</option><option value="begun">begun</option></select></div>
+            <div class="match-item">3. swim <select id="m3" data-ans="swam"><option value="">Chọn V2...</option><option value="swam">swam</option><option value="swum">swum</option></select></div>
+            <div class="match-item">4. see <select id="m4" data-ans="saw"><option value="">Chọn V2...</option><option value="saw">saw</option><option value="seen">seen</option></select></div>
+            <div class="match-item">5. buy <select id="m5" data-ans="bought"><option value="">Chọn V2...</option><option value="bought">bought</option><option value="brought">brought</option></select></div>
+            <div class="match-item">6. write <select id="m6" data-ans="wrote"><option value="">Chọn V2...</option><option value="wrote">wrote</option><option value="written">written</option></select></div>
+            <div class="match-item">7. make <select id="m7" data-ans="made"><option value="">Chọn V2...</option><option value="made">made</option><option value="maked">maked</option></select></div>
+            <div class="match-item">8. ride <select id="m8" data-ans="rode"><option value="">Chọn V2...</option><option value="rode">rode</option><option value="rided">rided</option></select></div>
+            <div class="match-item">9. speak <select id="m9" data-ans="spoke"><option value="">Chọn V2...</option><option value="spoke">spoke</option><option value="spoken">spoken</option></select></div>
+            <div class="match-item">10. hold <select id="m10" data-ans="held"><option value="">Chọn V2...</option><option value="held">held</option><option value="holded">holded</option></select></div>
+            <div class="match-item">11. wear <select id="m11" data-ans="wore"><option value="">Chọn V2...</option><option value="wore">wore</option><option value="weared">weared</option></select></div>
+            <div class="match-item">12. hear <select id="m12" data-ans="heard"><option value="">Chọn V2...</option><option value="heard">heard</option><option value="heared">heared</option></select></div>
+            <div class="match-item">13. beat <select id="m13" data-ans="beat"><option value="">Chọn V2...</option><option value="beat">beat</option><option value="beaten">beaten</option></select></div>
+            <div class="match-item">14. tell <select id="m14" data-ans="told"><option value="">Chọn V2...</option><option value="told">told</option><option value="telled">telled</option></select></div>
+            <div class="match-item">15. put <select id="m15" data-ans="put"><option value="">Chọn V2...</option><option value="put">put</option><option value="putted">putted</option></select></div>
+        </div>
+    </div>
+
+    <div class="exercise">
+        <h2>Bài 2. Choose the correct answer</h2>
+        <div id="mcq-container">
+            <div class="q-block">1. At the weekend we can play a ________ of badminton or join a football match.
+                <div class="options-grid" data-q="mc1" data-ans="B">
+                    <label><input type="radio" name="mc1" value="A"> A. sport</label><label><input type="radio" name="mc1" value="B"> B. game</label><label><input type="radio" name="mc1" value="C"> C. match</label>
+                </div>
+            </div>
+            <div class="q-block">2. Football is an ________ game.
+                <div class="options-grid" data-q="mc2" data-ans="A">
+                    <label><input type="radio" name="mc2" value="A"> A. outdoor</label><label><input type="radio" name="mc2" value="B"> B. indoor</label><label><input type="radio" name="mc2" value="C"> C. individual</label>
+                </div>
+            </div>
+            <div class="q-block">3. Kien is not very ________. He never plays games.
+                <div class="options-grid" data-q="mc3" data-ans="C">
+                    <label><input type="radio" name="mc3" value="A"> A. sport</label><label><input type="radio" name="mc3" value="B"> B. sporting</label><label><input type="radio" name="mc3" value="C"> C. sporty</label>
+                </div>
+            </div>
+            <div class="q-block">4. Thanh likes ________ weather because he can go swimming.
+                <div class="options-grid" data-q="mc4" data-ans="A">
+                    <label><input type="radio" name="mc4" value="A"> A. hot</label><label><input type="radio" name="mc4" value="B"> B. cold</label><label><input type="radio" name="mc4" value="C"> C. rainy</label>
+                </div>
+            </div>
+            <div class="q-block">5. Vietnamese students play different sports and games ________ the break time.
+                <div class="options-grid" data-q="mc5" data-ans="C">
+                    <label><input type="radio" name="mc5" value="A"> A. in</label><label><input type="radio" name="mc5" value="B"> B. on</label><label><input type="radio" name="mc5" value="C"> C. during</label>
+                </div>
+            </div>
+            <div class="q-block">6. As it doesn't snow in Viet Nam, we cannot ________ skiing.
+                <div class="options-grid" data-q="mc6" data-ans="B">
+                    <label><input type="radio" name="mc6" value="A"> A. play</label><label><input type="radio" name="mc6" value="B"> B. go</label><label><input type="radio" name="mc6" value="C"> C. do</label>
+                </div>
+            </div>
+            <div class="q-block">7. Many girls and women ________ aerobics to keep fit.
+                <div class="options-grid" data-q="mc7" data-ans="C">
+                    <label><input type="radio" name="mc7" value="A"> A. play</label><label><input type="radio" name="mc7" value="B"> B. go</label><label><input type="radio" name="mc7" value="C"> C. do</label>
+                </div>
+            </div>
+            <div class="q-block">8. It's very ________ to swim there. The water is heavily polluted.
+                <div class="options-grid" data-q="mc8" data-ans="B">
+                    <label><input type="radio" name="mc8" value="A"> A. safe</label><label><input type="radio" name="mc8" value="B"> B. unsafe</label><label><input type="radio" name="mc8" value="C"> C. unpopular</label>
+                </div>
+            </div>
+            <div class="q-block">9. – ________ do you go to the gym? – By bus.
+                <div class="options-grid" data-q="mc9" data-ans="B">
+                    <label><input type="radio" name="mc9" value="A"> A. What</label><label><input type="radio" name="mc9" value="B"> B. How</label><label><input type="radio" name="mc9" value="C"> C. Why</label>
+                </div>
+            </div>
+            <div class="q-block">10. – What's your favourite ________? – I like swimming.
+                <div class="options-grid" data-q="mc10" data-ans="C">
+                    <label><input type="radio" name="mc10" value="A"> A. subject</label><label><input type="radio" name="mc10" value="B"> B. game</label><label><input type="radio" name="mc10" value="C"> C. sport</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise">
+        <h2>Bài 3. Put the words in order to make questions</h2>
+        <div class="q-block">1. you/practise/table tennis/How often/do/playing<br><input type="text" data-ans="how often do you practise playing table tennis">?</div>
+        <div class="q-block">2. the match/win/your team/Did/last Sunday<br><input type="text" data-ans="did your team win the match last sunday">?</div>
+        <div class="q-block">3. arrive/the stadium/at/What time/you/did<br><input type="text" data-ans="what time did you arrive at the stadium">?</div>
+        <div class="q-block">4. play/games/your family/Does/sometimes/together<br><input type="text" data-ans="does your family sometimes play games together">?</div>
+        <div class="q-block">5. you/play/Did/were/when you/marbles/usually/small<br><input type="text" data-ans="did you usually play marbles when you were small">?</div>
+    </div>
+
+    <div class="exercise">
+        <h2>Bài 4. Put the verbs into correct tense</h2>
+        <div class="q-block">
+            <p>The Tigers won the Gold Cup last week. They (1. play) <input type="text" class="passage-input" data-ans="played"> fewer matches than the Lions or the Leopards, 
+            but they (2. score) <input type="text" class="passage-input" data-ans="scored"> more points. 
+            In fact, the Tigers (3. lose) <input type="text" class="passage-input" data-ans="lost"> only five matches during the season. 
+            The Zebras (4. beat) <input type="text" class="passage-input" data-ans="beat"> the Lions and (5. take) <input type="text" class="passage-input" data-ans="took"> second place. 
+            They (6. score) <input type="text" class="passage-input" data-ans="scored"> 30 points from 22 matches. 
+            The Zebras (7. have) <input type="text" class="passage-input" data-ans="had"> a very strong team. 
+            They (8. win) <input type="text" class="passage-input" data-ans="won"> a lot of matches and but not many teams (9. beat) <input type="text" class="passage-input" data-ans="beat"> them. 
+            The Pandas (10. be) <input type="text" class="passage-input" data-ans="were"> at the bottom of the league. They lost most of their matches this season.</p>
+        </div>
+    </div>
+
+    <button id="submit-btn" onclick="gradeAll()">NỘP BÀI & KIỂM TRA ĐÁP ÁN</button>
+
+    <div id="result-summary">
+        <h2 id="total-score">Kết quả: 0/45</h2>
+        <div id="feedback-content"></div>
+    </div>
+</div>
+
+<script>
+    function gradeAll() {
+        let score = 0;
+        let total = 0;
+
+        // Grade Bài 1
+        document.querySelectorAll('select').forEach(s => {
+            total++;
+            if(s.value === s.dataset.ans) { score++; s.style.backgroundColor = "#d4edda"; }
+            else { s.style.backgroundColor = "#f8d7da"; }
+        });
+
+        // Grade Bài 2
+        document.querySelectorAll('.options-grid').forEach(og => {
+            total++;
+            let sel = og.querySelector('input:checked');
+            if(sel && sel.value === og.dataset.ans) { score++; og.style.border = "2px solid green"; }
+            else { og.style.border = "2px solid red"; }
+        });
+
+        // Grade Bài 3, 4, 5
+        document.querySelectorAll('input[type="text"]').forEach(ti => {
+            total++;
+            let uAns = ti.value.trim().toLowerCase().replace(/[.?]/g, "");
+            let cAns = ti.dataset.ans.toLowerCase();
+            if(uAns === cAns) { score++; ti.style.backgroundColor = "#d4edda"; }
+            else { ti.style.backgroundColor = "#f8d7da"; ti.value += " (Đúng: " + cAns + ")"; }
+        });
+
+        // Summary
+        document.getElementById('result-summary').style.display = "block";
+        document.getElementById('total-score').innerText = "Kết quả: " + score + "/" + total;
+        
+        let feedback = "<h3>Hướng dẫn giải chi tiết:</h3><ul>";
+        feedback += "<li><b>Bài 1 & 5:</b> Các em cần học thuộc bảng động từ bất quy tắc (Go-Went, Eat-Ate...).</li>";
+        feedback += "<li><b>Bài 4:</b> Cấu trúc câu hỏi quá khứ: <i>Did + S + V(nguyên mẫu)</i>.</li>";
+        feedback += "<li><b>Bài 2:</b> Lưu ý các cụm từ: <i>go skiing, do aerobics, play a game.</i></li></ul>";
+        
+        document.getElementById('feedback-content').innerHTML = feedback;
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>

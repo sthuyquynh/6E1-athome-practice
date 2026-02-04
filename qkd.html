@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HƯỚNG DẪN TỰ HỌC: THÌ QUÁ KHỨ ĐƠN</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e67e22;
+            --bg: #f9f9f9;
+            --white: #ffffff;
+            --correct: #27ae60;
+            --wrong: #e74c3c;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 4px solid var(--secondary);
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: var(--secondary);
+            border-left: 6px solid var(--secondary);
+            padding-left: 15px;
+            margin-top: 35px;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .box-blue { background: #e3f2fd; border: 1px solid #bbdefb; }
+        .box-orange { background: #fff3e0; border: 1px solid #ffe0b2; }
+        
+        .formula {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Consolas', monospace;
+            margin: 10px 0;
+        }
+        .example {
+            background: #f1f8e9;
+            border-left: 4px solid #8bc34a;
+            padding: 10px 15px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .note {
+            background: #fce4ec;
+            border: 1px dashed #f06292;
+            padding: 15px;
+            color: #c2185b;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--secondary);
+            color: white;
+        }
+        tr:nth-child(even) { background-color: #f8f9fa; }
+        .highlight { color: #e74c3c; font-weight: bold; }
+
+        /* Styles cho Bài tập */
+        .exercise-section {
+            background: #f0f4f8;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+        .question {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        input[type="text"] {
+            padding: 5px 10px;
+            border: 2px solid #bdc3c7;
+            border-radius: 4px;
+            font-size: 1em;
+            width: 150px;
+        }
+        .btn-check {
+            background: var(--secondary);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            transition: 0.3s;
+        }
+        .btn-check:hover { background: #2980b9; }
+        .explanation {
+            display: none;
+            color: #555;
+            font-size: 0.9em;
+            background: #fff;
+            padding: 5px 10px;
+            margin-top: 5px;
+            border-left: 3px solid var(--secondary);
+            border-radius: 4px;
+        }
+        .correct { border-color: var(--correct) !important; background-color: #e8f5e9; }
+        .wrong { border-color: var(--wrong) !important; background-color: #ffebee; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>HƯỚNG DẪN TỰ HỌC: THÌ QUÁ KHỨ ĐƠN (PAST SIMPLE)</h1>
+
+    <div class="section">
+        <h2>1. Ý nghĩa và Dấu hiệu (Khi nào dùng?)</h2>
+        <p>Dùng để kể về những hành động <strong>đã làm và đã xong</strong> trong quá khứ.</p>
+        <p><strong>Dấu hiệu nhận biết:</strong> Trong câu thường có các từ:</p>
+        <ul>
+            <li><span class="highlight">Yesterday</span> (hôm qua)</li>
+            <li><span class="highlight">Last...</span> (last night, last week, last month, last year...)</li>
+            <li><span class="highlight">... ago</span> (2 days ago, 3 years ago...)</li>
+            <li><span class="highlight">In + mốc thời gian quá khứ</span> (in 2020, in 2018...)</li>
+        </ul>
+    </div>
+
+    <div class="section box-blue">
+        <h2>2. Cấu trúc câu</h2>
+        <p class="note">Lưu ý: Không dùng cả "was/were" và "did" trong cùng một câu!</p>
+
+        <h3>Nhóm A: Động từ TO BE (Thì, là, ở)</h3>
+        <div class="formula">
+            (+) S + was/were<br>
+            (-) S + was/were + not (wasn't/weren't)<br>
+            (?) (Wh-) was/were + S + ...?
+        </div>
+        <div class="example">
+            <strong>Ví dụ:</strong> I <strong>was</strong> at home yesterday. | They <strong>weren't</strong> happy.
+        </div>
+
+        <h3>Nhóm B: Động từ THƯỜNG (Chỉ hành động)</h3>
+        <div class="formula">
+            (+) S + V2/ed<br>
+            (-) S + didn't + V (nguyên thể)<br>
+            (?) Did + S + V (nguyên thể)?
+        </div>
+        <div class="example">
+            <strong>Ví dụ:</strong> He <strong>played</strong> soccer. | We <strong>didn't go</strong> to school.
+        </div>
+    </div>
+
+    <div class="section box-orange">
+        <h2>3. Cách biến đổi Động từ</h2>
+        <table>
+            <thead>
+                <tr><th>Hiện tại (V1)</th><th>Quá khứ (V2)</th><th>Nghĩa</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Go</td><td><strong>Went</strong></td><td>Đi</td></tr>
+                <tr><td>Have</td><td><strong>Had</strong></td><td>Có / Ăn</td></tr>
+                <tr><td>Eat</td><td><strong>Ate</strong></td><td>Ăn</td></tr>
+                <tr><td>Drink</td><td><strong>Drank</strong></td><td>Uống</td></tr>
+                <tr><td>See</td><td><strong>Saw</strong></td><td>Nhìn</td></tr>
+                <tr><td>Buy</td><td><strong>Bought</strong></td><td>Mua</td></tr>
+                <tr><td>Do</td><td><strong>Did</strong></td><td>Làm</td></tr>
+                <tr><td>Make</td><td><strong>Made</strong></td><td>Chế tạo</td></tr>
+                <tr><td>Write</td><td><strong>Wrote</strong></td><td>Viết</td></tr>
+                <tr><td>Read</td><td><strong>Read</strong></td><td>Đọc</td></tr>
+                <tr><td>Take</td><td><strong>Took</strong></td><td>Lấy</td></tr>
+                <tr><td>Speak</td><td><strong>Spoke</strong></td><td>Nói</td></tr>
+                <tr><td>Give</td><td><strong>Gave</strong></td><td>Cho</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="exercise-section">
+        <h2>📝 BÀI TẬP THỰC HÀNH (15 CÂU)</h2>
+        <p><em>Hãy đọc kỹ trạng từ thời gian và nhớ quy tắc "Mượn Did - Trả nguyên thể" nhé!</em></p>
+        
+        <div class="question">1. Yesterday, I (be) <input type="text" id="ans1" placeholder="was"> at the library. (Ví dụ)</div>
+        <div class="question">2. We (not / play) <input type="text" id="ans2" placeholder="didn't play"> football last Sunday. (Ví dụ)</div>
+        <div class="question">3. She (buy) <input type="text" id="ans3" placeholder="bought"> a new dress two days ago. (Ví dụ)</div>
+        <div class="question">4. Did you (see) <input type="text" id="ans4" placeholder="see"> Lan last night? (Ví dụ)</div>
+
+        <div class="question">5. My father (watch) <input type="text" id="ans5"> a great movie on TV last night.
+            <div class="explanation" id="exp5">Giải thích: Động từ có quy tắc, thêm đuôi -ed.</div>
+        </div>
+        <div class="question">6. They (not / be) <input type="text" id="ans6"> happy because the weather was bad.
+            <div class="explanation" id="exp6">Giải thích: To be số nhiều phủ định là "weren't" hoặc "were not".</div>
+        </div>
+        <div class="question">7. Last year, we (go) <input type="text" id="ans7"> to Da Lat for our summer vacation.
+            <div class="explanation" id="exp7">Giải thích: Động từ bất quy tắc (Go -> Went).</div>
+        </div>
+        <div class="question">8. Did she (finish) <input type="text" id="ans8"> her homework before 9 PM?
+            <div class="explanation" id="exp8">Giải thích: Câu hỏi mượn trợ động từ "Did", động từ giữ nguyên mẫu.</div>
+        </div>
+        <div class="question">9. I (eat) <input type="text" id="ans9"> a delicious sandwich for breakfast.
+            <div class="explanation" id="exp9">Giải thích: Động từ bất quy tắc (Eat -> Ate).</div>
+        </div>
+        <div class="question">10. The children (stop) <input type="text" id="ans10"> playing when it rained.
+            <div class="explanation" id="exp10">Giải thích: Động từ 1 âm tiết (P-N-P), gấp đôi phụ âm cuối (stopped).</div>
+        </div>
+        <div class="question">11. We (not / have) <input type="text" id="ans11"> any English lessons last Tuesday.
+            <div class="explanation" id="exp11">Giải thích: Phủ định động từ thường dùng "didn't + nguyên mẫu".</div>
+        </div>
+        <div class="question">12. Where (be) <input type="text" id="ans12"> you yesterday afternoon?
+            <div class="explanation" id="exp12">Giải thích: To be đi với chủ ngữ "You" là "were".</div>
+        </div>
+        <div class="question">13. My brother (study) <input type="text" id="ans13"> very hard last week.
+            <div class="explanation" id="exp13">Giải thích: Động từ tận cùng là phụ âm + y, đổi y thành ied.</div>
+        </div>
+        <div class="question">14. They (give) <input type="text" id="ans14"> me a lovely gift on my birthday.
+            <div class="explanation" id="exp14">Giải thích: Động từ bất quy tắc (Give -> Gave).</div>
+        </div>
+        <div class="question">15. Did they (make) <input type="text" id="ans15"> a big cake for the party?
+            <div class="explanation" id="exp15">Giải thích: Câu hỏi mượn "Did", động từ giữ nguyên mẫu (make).</div>
+        </div>
+
+        <button class="btn-check" onclick="checkAnswers()">Kiểm tra kết quả</button>
+    </div>
+
+    <p style="text-align: center; color: #7f8c8d;">Chúc các em học tốt!</p>
+</div>
+
+<script>
+function checkAnswers() {
+    const correctAnswers = {
+        ans1: "was", ans2: "didn't play", ans3: "bought", ans4: "see",
+        ans5: "watched", ans6: "weren't", ans7: "went", ans8: "finish",
+        ans9: "ate", ans10: "stopped", ans11: "didn't have", ans12: "were",
+        ans13: "studied", ans14: "gave", ans15: "make"
+    };
+
+    for (let id in correctAnswers) {
+        let input = document.getElementById(id);
+        let val = input.value.trim().toLowerCase();
+        
+        // Hỗ trợ cả viết tắt và viết đầy đủ cho phủ định
+        let isCorrect = (val === correctAnswers[id]);
+        if (id === "ans6" && val === "were not") isCorrect = true;
+        if (id === "ans11" && val === "did not have") isCorrect = true;
+
+        if (isCorrect) {
+            input.className = "correct";
+        } else if (val !== "") {
+            input.className = "wrong";
+        }
+    }
+    
+    // Hiện phần giải thích
+    document.querySelectorAll('.explanation').forEach(el => el.style.display = 'block');
+    alert("Đã kiểm tra xong! Hãy xem phần giải thích bên dưới mỗi câu nhé.");
+}
+</script>
+
+</body>
+</html>
